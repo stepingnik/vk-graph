@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="d3.tip.v0.6.3.js"></script>
+<link href="bootstrap.css" rel="stylesheet">
+<script src="jquery.min.js"></script>
+<script src="bootstrap.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type='text/javascript' src="http://bost.ocks.org/mike/fisheye/fisheye.js?0.0.3"> </script>
+
+<script src="in.js"></script>
+<link href="in.css" rel="stylesheet">
+
+
+<div class="form-group" id="go">
+    <label class="sr-only">ID</label>
+    <input class="form-control" id="inputID" placeholder="Введите ID">
+    <button type="submit" class="btn btn-primary"  onclick="go()">start</button>
+</div>
+
+<div>
+    <div id="popover_title" style="display: none" class = "pert">
+        <div id="setColor" >&#9733 &#9733 &#9733</div>
+        <div class="content">Title Text:  <span class='value'></span></div>
+    </div>
+
+    <div id="popover_content_wrapper" style="display: none" >
+        Data Data Data Data <br>
+        Data
+    </div>
+
+    <div id="s">
+        <button class="btn btn-primary" id="qw" onclick="tickNames()">Names</button>
+        <button type="button" class="btn btn-primary" data-toggle="popover" title="Info" data-content="FishEye" onclick="fish()">Fish</button>
+    </div>
+</div>
